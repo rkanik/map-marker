@@ -1,0 +1,8 @@
+#App {
+   height: 100vh;
+   overflow: hidden;
+   #ColorPicker {
+      position: absolute;
+      z-index: 101;
+   }
+}

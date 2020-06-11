@@ -1,0 +1,35 @@
+#SearchBar {
+   position: absolute;
+   width: 20rem;
+   top: 1rem;
+   left: 1rem;
+   z-index: 100;
+   display: flex;
+   border-radius: 0.2rem;
+   background-color: white;
+   padding: 0 0.3rem;
+   box-shadow: 0 2px 4px rgba(black, 0.25);
+   .icon-container {
+      padding: 0.6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .icon {
+         height: 0.9rem;
+         width: 0.9rem;
+         opacity: 0.6;
+      }
+   }
+   .input-container {
+      padding: 0.45rem;
+      position: relative;
+      width: 85%;
+      input,
+      .auto-fill {
+         width: 100%;
+         font-size: 0.9em;
+         height: 100%;
+         color: #6d6d6d;
+      }
+   }
+}

@@ -1,0 +1,102 @@
+@mixin btn {
+   padding: 0.5rem 1rem;
+   text-transform: uppercase;
+   color: white;
+   font-size: 0.9em;
+   border-radius: 0.2rem;
+   text-align: center;
+   user-select: none;
+}
+
+#Map {
+   height: 100%;
+   width: 100%;
+   .map-marker {
+      margin-top: -1.5rem;
+      transition: all 300 ease-in-out;
+      .icon {
+         user-select: none;
+         pointer-events: none;
+      }
+      .arrow-marker,
+      .box-marker {
+         .icon svg {
+            height: 2.5rem;
+         }
+      }
+      .box-marker .icon svg {
+         width: 5.2rem;
+      }
+      .arrow-marker .icon svg {
+         width: 4rem;
+      }
+      .drop-marker {
+         .icon svg {
+            height: 3rem;
+            width: 2.5rem;
+         }
+      }
+      .text-marker {
+         max-width: 16rem;
+         box-shadow: 0 2px 4px rgba(black, 0.2);
+         .text {
+            padding: 0.4rem 0.8rem;
+            border-radius: 0.2rem;
+            text-transform: unset;
+            color: white;
+            font-size: 0.9em;
+            background-color: rgba(#673ab7, 0.5);
+            &.border {
+               border: 1px solid #673ab7;
+            }
+            p {
+               word-wrap: break-word;
+            }
+         }
+         .text-box {
+            text-transform: uppercase;
+            background-color: #26a69a;
+            &.border {
+               border-color: #00897b;
+            }
+         }
+         .btn {
+            text-transform: uppercase;
+         }
+         .text-entry {
+            background-color: #2196f3;
+         }
+         .text-exit {
+            background-color: #f44336;
+         }
+         .text-no-u-turn {
+            background-color: #ff9800;
+         }
+         .text-clean-out-area {
+            background-color: #4caf50;
+         }
+         .text-marsh-area {
+            background-color: #3f51b5;
+         }
+         .text-work-site {
+            background-color: #e91e63;
+         }
+         input {
+            height: 100%;
+            background-color: transparent !important;
+            &::placeholder {
+               color: #bdbdbd;
+            }
+         }
+         p {
+            user-select: none;
+            word-wrap: break-word;
+         }
+         input,
+         p {
+            font-size: 1em;
+            color: white;
+         }
+      }
+   }
+}

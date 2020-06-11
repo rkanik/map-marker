@@ -1,0 +1,116 @@
+#MarkerTools {
+   padding: 1rem;
+   width: 100%;
+   .label {
+      text-transform: uppercase;
+      color: #757575;
+      margin-bottom: 1rem;
+   }
+   .tools-group {
+      .tools-top {
+         padding: 0.5rem 0;
+         cursor: pointer;
+         .tools-label {
+            color: #9e9e9e;
+            min-width: max-content;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            font-weight: normal;
+         }
+         .icon {
+            height: 0.8rem;
+            width: 0.8rem;
+            min-width: 0.8rem;
+            max-width: 0.8rem;
+            color: #bdbdbd;
+            transition: transform 200ms ease-in-out;
+         }
+      }
+      .tools {
+         height: auto;
+         max-height: 0;
+         transition: max-height 300ms ease-in-out;
+         overflow: hidden;
+         .tools-container {
+            padding: 0.5rem 0.5rem 0.5rem 1rem;
+            flex-wrap: wrap;
+            &.text {
+               .tool {
+                  width: 100%;
+                  border: 1px solid #dadce0;
+                  text-align: center;
+               }
+            }
+            .tool {
+               padding: 0.3rem 0.6rem;
+               border: 2px solid #dadce0;
+               margin: 0.2rem;
+               cursor: pointer;
+               border-radius: 0.2rem;
+               &:hover,
+               &.active {
+                  border-color: #26a69a;
+                  background-color: #e0f2f1;
+               }
+               .text-box {
+                  padding: 0.2rem 0.5rem;
+                  border-radius: 0.2rem;
+                  text-transform: uppercase;
+                  color: white;
+                  font-size: 0.9em;
+                  border: 1px solid #00897b;
+                  background-color: #26a69a;
+                  &.text {
+                     border-color: #673ab7;
+                     background-color: rgba(#673ab7, 0.65);
+                     color: white;
+                     text-transform: unset;
+                  }
+                  &.btn {
+                     border: none;
+                  }
+                  &.text-entry {
+                     background-color: #2196f3;
+                  }
+                  &.text-exit {
+                     background-color: #f44336;
+                  }
+                  &.text-no-u-turn {
+                     background-color: #ff9800;
+                  }
+                  &.text-clean-out-area {
+                     background-color: #4caf50;
+                  }
+                  &.text-marsh-area {
+                     background-color: #3f51b5;
+                  }
+                  &.text-work-site {
+                     background-color: #e91e63;
+                  }
+               }
+            }
+            .icon {
+               &.arrow svg,
+               &.box svg {
+                  width: 1.8rem;
+                  height: 1.8rem;
+               }
+               &.drop svg {
+                  width: 2rem;
+                  height: 2rem;
+               }
+            }
+         }
+      }
+      &.expanded {
+         .tools-top {
+            .icon {
+               transform: rotate(90deg);
+            }
+         }
+         .tools {
+            max-height: 24rem;
+         }
+      }
+   }
+}

@@ -1,0 +1,17 @@
+#Sidebar {
+   width: 20rem;
+   box-shadow: 4px 0 12px rgba(black, 0.24);
+   height: 100vh;
+   z-index: 100;
+   overflow-y: auto;
+}
+// Scrollbar
+#Sidebar::-webkit-scrollbar {
+   width: 0.4rem;
+}
+#Sidebar::-webkit-scrollbar-thumb {
+   background-color: #eeeeee;
+   &:hover {
+      background-color: #80cbc4;
+   }
+}
