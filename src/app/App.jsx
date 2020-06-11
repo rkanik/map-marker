@@ -559,7 +559,7 @@ class App extends React.Component {
 
          this.setTransform(el.firstElementChild, 'scale', scale)
 
-         marker.scale = +scale
+         marker.scale = marker.transform.scale = +scale
          let mapMarkers = [...this.state.mapMarkers].map(m =>
             m.id === marker.id ? marker : m
          )
